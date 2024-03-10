@@ -16,14 +16,17 @@ header
     display: flex;
     color: yellow;
 }
-header h1
+
+.headLine
 {
+    list-style-type: none;
     display: flex;
     width: 70%;
-    margin-left: 16px;
+    margin: 0.5em;
+    margin-left: 1em;
     font-family: "Oleo Script", sans-serif;
     color: rgb(245, 243, 160);
-    font-size: 40px;
+    font-size: 2.5rem;
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
@@ -37,17 +40,31 @@ header nav
 }
 nav a
 {
+    text-align: center;
     margin: 1rem;
     color: yellow;
     text-decoration: none;
     font-size: larger;
-    height: 20px;
+    height: 25px;
     font-family: "Raleway", sans-serif;
 }
 nav a:hover,nav a:focus
 {
-    color: white;
+    background-color: yellow;
+    color: black;
+    box-shadow: 2px 2px black;
+    border-radius: 4px;
+    padding:2px;
 }
+
+@media(max-width:708px)
+{
+    .headLine
+    {
+        font-size: 1.5rem;
+    }
+}
+
 .discoverPlaces
 {
     display: block;
