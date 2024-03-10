@@ -57,12 +57,39 @@ nav a:hover,nav a:focus
     padding:2px;
 }
 
+
 @media(max-width:708px)
 {
     .headLine
     {
         font-size: 1.5rem;
+        margin:0.70rem;
     }
+    nav a
+    {
+        margin: 0.2rem;
+        font-size: small;
+    }
+    .discoverPlaces
+    {
+    top: -300px;
+    margin: 0.5px auto;
+    font-size: 0.8rem;
+    }
+
+    .discoverPlaces h1
+    {
+        font-size: medium;
+    }
+    .discoverPlaces button
+    {
+        display:inline;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+
 }
 
 .discoverPlaces
@@ -90,8 +117,6 @@ nav a:hover,nav a:focus
     height: 2rem;  
     font-weight:500;
     border: 0;
-    width:40%;
-    transition:width 3s
 }
 .discoverPlaces button:hover,.discoverPlaces button:focus
 {
@@ -153,4 +178,12 @@ footer
 footer i
 {
     padding: 1rem;
+}
+
+@media(max-width:565)
+{
+    .card
+    {
+        display: block !important;
+    }
 }
