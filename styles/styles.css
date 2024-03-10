@@ -1,5 +1,6 @@
 body
 {
+    font-family: "Quicksand", sans-serif;
     box-sizing: border-box;
     margin: 0px;
 }
@@ -20,7 +21,12 @@ header h1
     display: flex;
     width: 70%;
     margin-left: 16px;
-    font-style: italic;
+    font-family: "Oleo Script", sans-serif;
+    color: rgb(245, 243, 160);
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
 header nav
 {
@@ -36,6 +42,7 @@ nav a
     text-decoration: none;
     font-size: larger;
     height: 20px;
+    font-family: "Raleway", sans-serif;
 }
 nav a:hover,nav a:focus
 {
@@ -63,12 +70,17 @@ nav a:hover,nav a:focus
     background-color: yellow;
     cursor: pointer;
     border-radius: 4px;
-    height: 2rem;
+    height: 2rem;  
+    font-weight:500;
+    border: 0;
+    width:40%;
+    transition:width 3s
 }
 .discoverPlaces button:hover,.discoverPlaces button:focus
 {
-    color:white;
+    color:rgb(5, 76, 94);
 }
+
 .extra
 {
     height: 100px;
@@ -84,7 +96,7 @@ main
 {
     margin-top: 0;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
 }
 .card
 {
@@ -106,6 +118,11 @@ main
 .card1 p,.card2 p,.card3 p
 {
     text-align: center;
+}
+.card1 p>strong,.card2 p>strong,.card3 p>strong
+{
+    color: rgb(0, 160, 117);
+    text-transform: uppercase;
 }
 footer
 {
