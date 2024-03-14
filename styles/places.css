@@ -1,0 +1,230 @@
+/* body
+{
+    font-family: "Quicksand", sans-serif;
+    background-color: rgba(66, 64, 64, 0.831);
+    margin: 0;
+}
+section
+{
+    display: flex;
+    margin: 1rem;
+}
+.card
+{
+    display: inline-grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px));
+    grid-gap:20px;
+    grid-auto-rows:minmax(250px,auto);
+    grid-auto-columns: minmax(150px,auto);
+    margin: 1rem;
+}
+.card1
+{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.card1 img
+{
+    width: 50%;
+    height: 100%;
+}
+.details
+{   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.details p
+{
+    display: flex;
+    width: 100%;
+    height: 33%;
+    font-size: small;
+    justify-content: center;
+    align-items: center;
+    padding:0.2rem;
+}
+.details div
+{
+    height: 33%;
+    font-size: smaller;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0.3rem;
+}
+.details div a
+{
+    text-decoration: none;
+}
+h1
+{
+    font-size: large;
+    height: 33%;
+    margin: 1rem auto;
+} */
+
+    /* ul {
+    padding: 0;
+    background-color: rgb(250, 146, 63);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px,auto);
+    grid-auto-columns: minmax(50px,auto);
+  }
+  
+  li {
+    background-color: rgb(238, 212, 192);
+    text-align: center;
+    width: 200px;
+    margin: 20px auto;
+  } */
+
+  body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+  }
+  
+  #page-logo a {
+    padding: 10px;
+    font-family: "Oleo Script", sans-serif;
+    color: rgb(245, 243, 160);
+    font-size: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  }
+  
+  header ul {
+    display: flex;
+  }
+  
+  header li {
+    margin-left: 20px;
+  }
+  
+  header a {
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+  }
+  
+  header nav a:hover {
+    color: rgb(77, 77, 77);
+    background-color: rgb(255, 251, 0);
+  }  
+body {
+    background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 58, 58));
+    color: rgb(68, 68, 68);
+  }
+  
+  #page-logo a {
+    color: rgb(183, 230, 235);
+  }
+  
+  header {
+    position: static;
+  }
+  
+  header a {
+    color: rgb(183, 230, 235);
+  }
+  
+  header nav a:hover {
+    background-color: rgb(183, 230, 235);
+    color: rgb(59, 59, 59);
+  }
+  
+  main ul {
+    width: 800px;
+    margin: 0 auto 48px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+  }
+  
+  li:nth-of-type(3) {
+    grid-column: 1 / span 2;
+  }
+  
+  main li {
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  main li img {
+    width: 220px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .item-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .item-content h2 {
+    margin: 0;
+  }
+  
+  .actions {
+    text-align: right;
+  }
+  
+  .actions a {
+    text-decoration: none;
+    padding: 6px;
+    color: rgb(22, 211, 228);
+    border-radius: 5px;
+  }
+  
+  .actions a:hover {
+    background-color: rgb(235, 253, 255);
+  }
+footer
+{
+    position:inherit;
+    left: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+footer i
+{
+    padding: 1rem;
+}
