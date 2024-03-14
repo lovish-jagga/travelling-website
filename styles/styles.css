@@ -101,15 +101,16 @@ body
 {
     text-transform: uppercase;
 }
-.discoverPlaces button
+.discoverPlaces a
 {
+    padding: 0.3rem;
     background-color: yellow;
     cursor: pointer;
-    border-radius: 4px;
-    height: 2rem;  
+    border-radius: 4px;  
     border: 0;
+    text-decoration: none;
 }
-.discoverPlaces button:hover,.discoverPlaces button:focus
+.discoverPlaces a:hover,.discoverPlaces a:focus
 {
     color:rgb(5, 76, 94);
 }
