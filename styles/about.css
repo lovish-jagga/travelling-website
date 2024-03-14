@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+  --main-color: #000000;
+  --secondary-color: #ffffff;
+  --tertiary-color: #222222;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: 10px;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../images/ocean.jpg");
+  background-position: right 35% bottom 57%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+    width: 100%;
+    padding: 40px;
+  }
+  
+  .form-input {
+    width: clamp(100px, 50vw, 420px);
+    height: 40px;
+    padding: 0 20px;
+    color: var(--main-color);
+    font-family: var(--body-font);
+    border: 1px solid var(--tertiary-color); 
+    border-radius: 1px 1px 2px 2px;
+    margin: 0 auto 10px auto;
+    transition: all 500ms; 
+  }
+    .form-input:focus {
+    outline: none;
+    border-top-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label {
+    font-size: 1.4rem;
+    color: rgb(117, 117, 117);
+    display: block;
+    transform: translate(2rem,-4rem);
+    transform-origin: 0 0;
+    transition: all 500ms;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+    user-select: none; 
+    pointer-events: none; 
+  }
+  
+  .form-input::placeholder {
+    display: none;
+    color: transparent;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+  }
+    
+  .form-input:focus + .form-label,
+  .form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-6.75rem) scale(0.8);
+  }
+  
+  .form-input:not(:placeholder-shown) {
+    border-top-color: rgba(0, 0, 0, 0.5);
+  }
+  .submitButton
+  {  
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    text-decoration: none;
+    padding: 6px;
+    color: rgb(22, 211, 228);
+    border-radius: 5px;
+    box-shadow: 2px;
+    width: 10rem;
+  }
+  
+  .btn:hover {
+    color: black;
+    background-color: rgb(235, 253, 255);
+  }
